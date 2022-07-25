@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SM Company tours</title>
+</head>
+
+<body>
+    <h1 id="title">Steel Mountain company tours</h1>
+    <p id="description"><strong>Impenetrable. See for yourself:</strong></p>
+    <form id="survey-form" method="POST">
+        <fieldset class="right-aligned">
+            <legend>Visiter</legend>
+            <label for="name" id="name-label">Name <input type="text" name="name" id="name" placeholder="Sam Sepiol"
+                    required></label>
+            <label for="email" id="email-label">E-mail <input type="email" name="email" id="email"
+                    placeholder="samsepi0l@yahoo.com" required></label>
+            <label for="number" id="number-label">Age <input type="number" name="age" min="13" max="120"
+                    placeholder="25" id="number"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Guide</legend>
+            <select name="dropdown" id="dropdown" required>
+                <option value="">Select an employee who provides you</option>
+                <option value="harper">Bill Harper</option>
+                <option value="gallagher">Wendy Gallagher</option>
+                <option value="davis">Trudy Davis</option>
+            </select>
+        </fieldset>
+
+        <fieldset class="left-aligned">
+            <legend>Participants</legend>
+            <label for="radio-1" id="radio-1-label"><input type="radio" name="radio" id="radio-1" value="1" checked>
+                Only me</label>
+            <label for="radio-2" id="radio-2-label"><input type="radio" name="radio" id="radio-2" value="2"> A few
+                friends with me</label>
+            <label for="radio-3"><input type="radio" name="radio" id="radio-3" value="3"> Me inside and friends in a car
+                in the
+                parking</label>
+        </fieldset>
+
+        <fieldset class="left-aligned">
+            <legend>Additional</legend>
+            <label for="checkbox-1" id="checkbox-1-label">
+                <input type="checkbox" name="checkbox" value="1" id="checkbox-1" required> I have read all formal
+                bullshit
+                and accept it</label>
+            <label for="checkbox-2" id="checkbox-2-label">
+                <input type="checkbox" name="checkbox" value="2" id="checkbox-2"> I am an IT-billionaire and I want a
+                tour without a queue</label>
+            <label for="checkbox-3" id="checkbox-3-label">
+                <input type="checkbox" name="checkbox" value="3" id="checkbox-2"> I'll come with an aquarium
+                fish</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comment, questions or wishes</legend>
+            <textarea name="textarea" id="textarea" cols="45" rows="10"
+                placeholder="e.g. do you have air conditioning?"></textarea>
+        </fieldset>
+
+        <button type="submit" id="submit">Book a tour >>></button>
+    </form>
+</body>
+
+</html>
